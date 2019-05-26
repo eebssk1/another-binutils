@@ -212,6 +212,12 @@ case "${enable_default_hash_style}" in
   *) ac_default_emit_gnu_hash=0 ;;
 esac
 
+case "${target}" in
+  *-*-linux-android*)
+   AC_DEFINE([ANDROID],[1])
+  ;;
+esac
+
 AM_BINUTILS_WARNINGS
 
 AM_LC_MESSAGES

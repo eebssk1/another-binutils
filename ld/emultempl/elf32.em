@@ -118,8 +118,10 @@ fragment <<EOF
 static void
 gld${EMULATION_NAME}_after_parse (void)
 {
+#ifndef ANDROID
   if (bfd_link_pie (&link_info))
     link_info.flags_1 |= (bfd_vma) DF_1_PIE;
+#endif
 
   if (bfd_link_executable (&link_info)
       && link_info.nointerp)
