@@ -15923,7 +15923,8 @@ esac
 
 case "${target}" in
   *-*-linux-android*)
-   $as_echo "#define ANDROID 1" >>confdefs.h
+
+$as_echo "#define ANDROID /**/" >>confdefs.h
 
   ;;
 esac

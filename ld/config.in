@@ -7,6 +7,9 @@
 #endif
 #define __CONFIG_H__ 1
 
+/* Do we build for android? */
+#undef ANDROID
+
 /* Define to 1 if you want to emit gnu hash in the ELF linker by default. */
 #undef DEFAULT_EMIT_GNU_HASH
 

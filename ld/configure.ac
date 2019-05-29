@@ -214,7 +214,7 @@ esac
 
 case "${target}" in
   *-*-linux-android*)
-   AC_DEFINE([ANDROID],[1])
+   AC_DEFINE([ANDROID],[],[Do we build for android?])
   ;;
 esac
 
